@@ -1,0 +1,254 @@
+﻿* { margin: 0px; }
+html { overflow-y: scroll; }
+body { background-color: #eee; color: #404040; font-family: Arial; font-size: 11px; }
+hr { color: #cccccc; background-color: #ccc; height: 1px; font-size: 1px !important; border: 0px none transparent; }
+.hrule { color: #cccccc; background-color: #ccc; height: 1px; font-size: 1px !important; border: 0px none transparent; }
+.hrule hr { display:none; }
+
+
+a { font-weight: normal; }
+a:link { color: #3888d8; text-decoration: none; }
+a:visited { color: #3888d8; text-decoration: none; }
+a:hover   { color: #3888d8; text-decoration: underline; font-weight:500; }
+
+#marketingContainer{ margin:2px auto; display:block; width:805px; text-align:left; }
+
+.mainContainer{ margin:70px auto; width:803px; text-align:left; }
+.mainContainerWithMarketing{ margin:0px auto 70px auto; }
+
+#mainContainerRightWrapper { float:left; width:100%; background:#fff; position:relative; overflow:hidden; border:1px solid #ccc; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+#mainContainerDividerWrapper { float:left; width:100%; background:#ccc; position:relative; right:512px; }
+#mainContainerLeftWrapper { 
+	float:left; 
+	width:100%; 
+	background: #c3c3c3; 
+	background: -moz-linear-gradient(top, #ffffff, #c3c3c3); 
+	background: -webkit-gradient(linear,  left top, left bottom, from(#ffffff), to(#c3c3c3)); 
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#ffffff', EndColorStr='#c3c3c3'); 
+	background-image: linear-gradient(180deg, rgb(255,255,255), rgb(195,195,195)); 
+	border-right:1px solid #ccc; 
+	position:static; 
+	right:1px; }
+
+#mainContainerLeft { float:left; width:288px; position:relative; left:513px; overflow:hidden; font-size: 11px; color: #404040; }
+#mainContainerDivider { float:left; width:0px; position:relative; left:513px; overflow:hidden; min-height: 465px; }
+#mainContainerRight { float:left; width:512px; position:relative; left:515px; overflow:hidden; _left:513px; _width:auto; }
+
+#mainContainerLeftContent { margin:45px 30px 34px 30px; }
+#mainContainerRightContent { margin:45px 45px 34px 45px; }
+
+#mainContainerLeftContentImage { height: 223px; text-align: center; }
+.mainContainerLeftBrandImage { max-height: 85px; max-width: 228px; border:0px; }
+#mainContainerLeftContentMessageItems p { margin-bottom: 22px; font-size:11px; }
+
+
+
+
+
+
+
+
+#mainContainerRightContentHeader { margin-bottom: 28px; }
+.mainContainerRightContentHeader { margin-bottom: 28px; }
+.mainContainerRightContentHeaderTitle { font-family: Arial; font-size: 22px; font-weight: normal; color: #404040; margin-bottom: 22px; }
+.productName { color: #4068c8; }
+
+.ErrorMessage { font-size: 12px; font-weight: normal; color: #990000; margin-bottom: 22px; }
+.ErrorMessageItem { font-size: 12px; font-weight: normal; color: #990000 !important; }
+
+.InformationMessage { font-size: 12px; font-weight: bold; color: #404040; margin-bottom: 22px; }
+.InformationMessage p { margin-bottom: 22px; }
+
+.InstructionMessage { font-size: 12px; font-weight: normal; color: #404040; margin-bottom: 22px; }
+.InstructionMessage p { margin-bottom: 22px; }
+
+.mainContainerRightContentHeaderInstructionMessage { font-size: 12px; font-weight: normal; color: #404040; margin-bottom: 22px; }
+div.mainContainerRightContentHeaderInstructionMessage p { margin-bottom: 22px; }
+.mainContainerRightContentHeaderInstructionMessage p { margin-bottom: 22px; } /* added to ensure QA release 8/20/2012 */
+
+
+#mainContainerRightContentInputPanelItems { margin-bottom: 27px; }
+.mainContainerRightContentInputPanelItems { margin-bottom: 27px; }
+.mainContainerRightContentInputPanelItem { margin-top: 8px; margin-bottom: 22px; }
+
+.mainContainerRightContentFooterInstructionMessageItems { font-size: 12px; font-weight: normal; color: #404040; margin-bottom: 28px; }
+
+.mainContainerRightContentFooterPageNoteMessage { font-size: 11px; font-weight: normal; color: #807f83; margin-bottom: 22px; overflow:auto; }
+div.mainContainerRightContentFooterPageNoteMessage p { margin-bottom: 22px; }
+
+.mainContainerRightContentFooterActionItems { font-size:12px; margin-bottom: 28px; }
+
+.inputPanelItemInputLine { font-size: 12px; font-weight: normal; } 
+.inputPanelItemInputLabel { color: #575757; white-space:normal; display:inline-block; vertical-align:middle; }
+.inputPanelItemInputData { color: #404040;  vertical-align:middle; }
+.inputPanelItemInputLineMarginS { margin-bottom: 8px; }
+
+.fieldNote { font-size: 11px; color: #666; font-style: italic; }
+.workspaceSubHeader { font-size: 14px; font-weight: bold; color: #2f61a6; }
+
+/****** Begin: Pages Labels and FieldNotes ******/
+.login-LabelWidth { width: 100px; } 
+.changePassword-LabelWidth { width: 140px; } 
+.changePassword-FieldNote { margin-left: 140px; } 
+.changePasswordForgot-LabelWidth { width: 140px; } 
+.changePasswordForgot-FieldNote { margin-left: 140px; } 
+.passwordEntry-LabelWidth { width: 100px; }
+.passwordEntry-FieldNoteMargin { margin-left: 100px;} 
+.passCodeEntry-LabelWidth { width: 100px; } 
+.passCodeEntry-FieldNoteMargin { margin-left: 100px; }
+.tokenEntry-LabelWidth { width: 100px; }
+.tokenNextCode-LabelWidth { width: 100px; }
+.tokenNextCode-FieldNoteMargin { margin-left: 100px; }
+.tokenPinEntry-LabelWidth { width: 100px; }
+.tokenPinEntry-FieldNoteMargin { margin-left: 100px; }
+/****** End: Pages Labels and FieldNotes ******/
+
+
+
+
+
+.center { text-align: center; }
+.nobr { white-space:nowrap; } 
+.block { display: block; }
+.inline-block { display: inline-block; }
+.inline { display:inline; }
+.v-alignMiddle { vertical-align:middle;  }
+.nodisplay { display: none; }
+
+/***** Begin: Actions ***** ***** ***** ***** *****/
+._tokenSetup { }
+._tokenEntry { }
+._login { }
+._forgotPassword { }
+._cancel { }
+/***** End: Actions ***** ***** ***** ***** *****/
+
+
+/** target: add behaviors actions. */
+.regularExpressionValidator_clearInput { } /** Depicted */
+
+
+.roundCorner5px { border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+.roundCorner5pxE { border-top-left-radius: 5px; -moz-border-top-left-radius: 5px; -webkit-border-top-left-radius: 5px; border-bottom-left-radius: 5px; -moz-border-bottom-left-radius: 5px; -webkit-border-bottom-left-radius: 5px;}
+.roundCorner5pxW { border-top-right-radius: 5px; -moz-border-top-right-radius: 5px; -webkit-border-top-right-radius: 5px; border-bottom-right-radius: 5px; -moz-border-bottom-right-radius: 5px; -webkit-border-bottom-right-radius: 5px;}
+
+.margin10pxN { margin-top: 10px; }
+.margin10pxW { margin-right: 10px; }
+
+.margin0pxS { margin-bottom: 0px; }
+.margin8pxS { margin-bottom: 8px; }
+.margin10pxS { margin-bottom: 10px; }
+.margin12pxS { margin-bottom: 12px; }
+.margin20pxS { margin-bottom: 20px; }
+.margin22pxS { margin-bottom: 22px; }
+
+.margin100pxE { margin-left: 100px; }
+.margin125pxE { margin-left: 125px; }
+.margin150pxE { margin-left: 150px; }
+.margin175pxE { margin-left: 175px; }
+
+.padding0pxAll { padding:0px; }
+
+.padding45S { padding-bottom:45px; }
+
+.padding8E { padding-right:8px; }
+
+.width30px { width: 30px; }
+.width50px { width: 50px; }
+.width75px { width: 75px; }
+.width100px { width: 100px; }
+.width125px { width: 125px; }
+.width150px { width: 150px; }
+.width175px { width: 175px; }
+.width200px { width: 200px; }
+.width225px { width: 225px; }
+.width250px { width: 250px; }
+
+.border0px { border: 0px; }
+
+#workingPanelCtrl,
+#workingPanel { display:none; position:fixed; }
+/* ReSharper disable InvalidValue */
+.workingImage { height:24px; width:24px; border:0px none inherit; padding-right:10px; }
+/* ReSharper restore InvalidValue */
+
+.workingText { font-size:11px; }
+
+ul { list-style: disc none outside; padding-left:14px; }
+
+
+/** IE|FF|Chrome */
+input[type=radio], input[type=checkbox] { padding:0px; width:13px; height:13px; } 
+input[type=radio]:focus, input[type=checkbox]:focus { outline: black dotted 1px; } 
+input[type=text]:focus, input[type=password]:focus { outline-color:invert; outline-style:none; outline-color:inherit; }
+
+
+/** IE7 */
+input[type=submit] { *overflow:visible; *padding:1px 8px; }
+
+
+
+
+
+
+
+
+#externalLogo { border:0px; display:block; height:130px; max-width:288px; overflow:hidden; } 
+
+/* this property needs to be overwritten to adjust the left panel message item area. */
+/* setting the height, expands the Message area starting from the bottom of the logo. */
+/* with no content: height:335px, with sample content: height:350px; */ 
+#externalMessageItems { height:350px; width:288px; max-width:288px; border:0px; overflow:visible; }
+
+#externalFooterContainer { background: #fff; margin:0px auto; width:100%; border-top:1px solid #ccc; }
+#externalFooter { overflow:hidden; border:0px; height:80px; width: 100%; }
+
+
+
+.mainContainerRightContentHeaderTitle.remoteFrame 
+{
+	margin-bottom: 0px;
+}
+.mainContainerRightContentInputPanelItem.remoteFrame 
+{
+	margin-bottom: 0px;
+}
+.inputPanelCommands.remoteFrame {}
+
+body.remoteFrame {
+	background: none;
+}
+
+
+/* BstToolValidation */
+.BstToolValidation-LabelWidth { width:150px; }
+
+/* CebToolValidation */
+.CebToolValidation-LabelWidth { width: 150px; }
+
+/* Contaact Information */
+.enrollment-LabelWidth { width: 150px; }
+.enrollment-PhoneNumberExtension-LabelWidth { margin-left:5px; width: 80px; }
+.enrollment-main-input-width { width:250px; }
+.enrollment-Country-input-width { width:200px; }
+.enrollment-PhoneNumberExtension-InputWidth { width: 75px; }
+.enrollment-fieldnote { margin-left: 150px; }
+
+/* CreatePassword */
+.enrollCreatePassword-LabelWidth { width: 125px; }
+
+/* OlbToolValidation */
+.OlbToolValidation-LabelWidth { width: 150px; }
+
+/* SetupVerification */
+.enrollmentSetup-LabelWidth { width: 130px }
+
+/* EligibleToolRegistration */ 
+.toolRegistration-label-AdminToolMarginW { margin-left: 5px; }
+
+/* verification-email-address */
+.verification-email-address
+{
+	word-wrap: break-word;
+	max-width:292px;
+}

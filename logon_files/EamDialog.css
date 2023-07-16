@@ -1,0 +1,136 @@
+﻿/***** Begin: jQuery.css modifications ***** ***** ***** ***** *****/
+.ui-button { display: inline-block; position: relative; padding: 0; margin-right: 0px; text-decoration: none !important; cursor: pointer; text-align: center; zoom: 1; overflow: visible; } /* the overflow property removes extra width in IE */
+.ui-button-text-only .ui-button-text { padding: .4em; }
+
+.ui-dialog { position: absolute; padding: 0px; width: 300px; overflow: hidden; }
+.ui-dialog .ui-dialog-titlebar { padding: 0px; position: relative; margin:0px; }
+.ui-dialog .ui-dialog-title { float: left; margin:22px 45px 0px 22px; padding-bottom:22px;  } 
+.ui-dialog .ui-dialog-content { position: relative; border: 0; padding: 0px; background: none; overflow: auto; zoom: 1; }
+
+.ui-widget { font-size: 1em; font-family: Arial; }
+.ui-widget input, .ui-widget select, .ui-widget textarea { font-family: Arial; font-size: 1em; }
+.ui-widget button, .ui-widget input[type="button"], .ui-widget input[type="submit"], .ui-widget input[type="reset"] { font-family: Arial; font-size: 10pt; }
+/*.ui-widget-content { border: 1px solid #ccc; background: #fff url(images/ui-bg_flat_75_ffffff_40x100.png) 50%/ 50% repeat-x; color: inherit; }*/
+.ui-widget-content { border: 1px solid #ccc; background-color: #fff; background-image:none; color: inherit; }
+.ui-widget-content a:link    { color: #3888d8; text-decoration: none; }     
+.ui-widget-content a:visited { color: #3888d8; text-decoration: none; }
+.ui-widget-content a:hover   { color: #3888d8; text-decoration: underline; }
+
+/*.ui-widget-header { border: 0px none #ccc; background: #fff url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x; color: #000; font-weight: normal; }*/
+.ui-widget-header { border: 0px none #ccc; background-color: #fff; background-image: none; color: #000; font-weight: normal; }
+.ui-widget-header a { color: #222222; }
+
+.ui-widget-content .ui-icon {background-image: none; }
+
+    
+/* jQuery: Corner radius */
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl { -moz-border-radius-topleft: 5px; -webkit-border-top-left-radius: 5px; -khtml-border-top-left-radius: 5px; border-top-left-radius: 5px; }
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr { -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -khtml-border-top-right-radius: 5px; border-top-right-radius: 5px; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl { -moz-border-radius-bottomleft: 5px; -webkit-border-bottom-left-radius: 5px; -khtml-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px; }
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br { -moz-border-radius-bottomright: 5px; -webkit-border-bottom-right-radius: 5px; -khtml-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px; }
+
+
+/* Overlays */
+.ui-widget-overlay { background-color: #aaaaaa; background-image:none; opacity: .3; filter:Alpha(Opacity=30); }
+.ui-widget-shadow { margin: -8px 0 0 -8px; padding: 8px; background-color: #aaaaaa; background-image:none; opacity: .3; filter:Alpha(Opacity=30); -moz-border-radius: 8px; -khtml-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; }
+
+
+
+/***** End: jQuery.css modifications ***** ***** ***** ***** *****/
+
+
+/***** Begin: Actions ***** ***** ***** ***** *****/
+._back { }
+._close { }
+._cancel { }
+._didNotReceivePhoneCall { }
+._phoneCallCompleted { }
+._phoneNumberNotListed { }
+._termsOfUse { }
+._didntReceiveTextMessage { }
+._sendTextMessage { }
+._smsEntered { }
+._learnMore { }
+
+._cannotAnswer { }
+._learnMoreOow { }
+/***** End: Actions ***** ***** ***** ***** *****/
+
+/***** Begin: Target Behaviors ***** ***** ***** ***** *****/
+.phoneNumberIsNumeric { }
+.nanp { }
+.nonNanp { }
+/***** End: Target Behaviors ***** ***** ***** ***** *****/
+
+/* #dialog { width:564; background-color:#fff;border: 1px solid #ccc; } */
+#dialogClose { position:relative; float:right; margin-top:5px; margin-right:8px; cursor: default; }
+#dialogMain {  margin-left:22px; margin-right:45px; }
+#dialogMainHeader { margin-top:0px; margin-bottom: 28px; }
+#dialogMainInputItems { margin-bottom: 30px; }
+#dialogMainActionButtonItems { margin-bottom: 27px; }
+#dialogMainActionLinkItems { font-size:12px; margin-bottom:22px; }
+#dialogMainPageNote { margin-bottom:22px; }
+
+.dialogHeaderTitle { font-size:18px; font-weight: bold; color: #162867; margin-bottom: 0px; }
+#dialogErrorItems { font-size:12px; font-weight:normal; color:#990000; margin-bottom: 20px; }
+#dialogErrorItems p { margin-bottom: 20px; }
+.dialogErrorItems { font-size:12px; font-weight:normal; color:#990000; margin-bottom: 20px; }
+.dialogErrorItems p { margin-bottom: 20px; }
+
+.dialogFieldError { font-size:12px; font-weight:normal; color:#990000;  }
+
+.dialogWorkspaceSubHeader { font-size:14px; font-weight: bold; color: #2f61a6; margin-bottom: 20px; }
+#dialogInstructionalItems { font-size:12px; font-weight: normal; color: #404040; margin-bottom: 20px; }
+#dialogInstructionalItems p { margin-bottom: 20px; }
+#dialogInformationalItems { font-size:12px; font-weight:bold; color:#404040; margin-bottom: 20px;  }
+#dialogInformationalItems p { margin-bottom: 20px;  }
+
+
+
+#dialogMainPageNote { font-size:11px; font-weight:normal; color:#807f83; }
+#dialogMainPageNote p {}
+
+table.dialogPhoneList { margin-bottom:10px; }
+table.dialogPhoneList tr > td { padding-bottom:5px; }
+table.dialogPhoneList tr > td:first-child { width:150px; padding-right:10px; }
+
+
+#workingIndicator { display:none; margin-bottom: 27px; }
+table.workingIndicatorTable tr > td { font-size:12px; font-weight:normal; }
+
+
+.dialogInputLine { font-size:12px; font-weight:normal;  }
+.dialogInputLabel { font-size:12px; color:#575757; white-space:normal; display:inline-block; vertical-align:middle; }
+.dialogInputText { font-size:12px; color:#404040; vertical-align:middle; }
+.dialogInputTextComposite { }
+.dialogInputTextVerticalAlignment { margin-left: 18px; }
+.dialogInputFieldNote { font-size:11px; font-weight:normal; font-style:italic; color:#666; }
+.actionLinkItem { font-size:12px; font-weight:normal; }
+.securityCodeText { font-size: 18px; color:#404040; }
+
+.phoneNumberComposite { margin-left:15px; }
+.phoneNumberAreaCodeBox3CharW { width:30px; }
+.phoneNumberExchange3CharW { width:30px; }
+.phoneNumberExtention4CharW { width:40px; }
+
+.isNumeric { }
+.numeric2CharW { width:24px; }
+.numeric3CharW { width:36px; }
+.numeric4CharW { width:48px; }
+
+.oowQuestion { }
+.oowAnswer { }
+.oowError { }
+
+.oobaError { }
+
+/** IE|FF|Chrome dialog box modifications... */
+
+.dialogCloser-image-focusOn { outline: black dotted 1px; } /* bug fix: 3 sided focus box */
+.dialogCloser-a-focusOn { outline-style: none; } /* bug fix: 3 sided focus box */
+
+a:focus { outline: #000 dotted 1px;  } /* new */
+a.dialogCloser { outline-color:#000; display:inline-block; } /* new */
+
+.inputCenter { text-align: center; } 
+.inputPlaceholder { color:#ccc; } 

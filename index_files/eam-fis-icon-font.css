@@ -1,0 +1,348 @@
+ @font-face {
+    font-family: 'fisfont';
+    src:    url('/eamweb/styles/fisfont.eot?9c8zo2');
+    src:    url('/eamweb/styles/fisfont.eot?9c8zo2#iefix') format('embedded-opentype'),
+        url('/eamweb/styles/fisfont.ttf?9c8zo2') format('truetype'),
+        url('/eamweb/styles/fisfont.woff?9c8zo2') format('woff'),
+        url('/eamweb/styles/fisfont.svg?9c8zo2#fisfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'fisfont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    /*font-size: 24px;*/
+	display: inline-block; 
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; color:#999999;
+}
+
+
+.ic-spin {
+  -webkit-animation: ic-spin 2s infinite linear;
+  animation: ic-spin 2s infinite linear;
+}
+.ic-pulse {
+  -webkit-animation: ic-pulse 1s infinite steps(8);
+  animation: ic-pulse 1s infinite steps(8);
+}
+@-webkit-keyframes ic-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes ic-pulse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.ic-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.ic-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.ic-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.ic-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.ic-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+:root .ic-rotate-90,
+:root .ic-rotate-180,
+:root .ic-rotate-270,
+:root .ic-flip-horizontal,
+:root .ic-flip-vertical {
+  filter: none;
+}
+
+
+
+
+.icon-Information_solid:before {
+    content: "\e924";
+}
+.icon-Help_solid:before {
+    content: "\e925";
+}
+.icon-Finger_print:before {
+    content: "\e922";
+}
+.icon-Suitcase:before {
+    content: "\e923";
+}
+.icon-Dashboard:before {
+    content: "\e921";
+}
+.icon-Notification_panel:before {
+    content: "\e91f";
+}
+.icon-Action:before {
+    content: "\e920";
+}
+.icon-Loan:before {
+    content: "\e91e";
+}
+.icon-Accounts:before {
+    content: "\e900";
+}
+.icon-Approval:before {
+    content: "\e901";
+}
+.icon-Arrow:before {
+    content: "\e902";
+}
+.icon-Back:before {
+    content: "\e903";
+}
+.icon-BillPay:before {
+    content: "\e904";
+}
+.icon-Bookmark:before {
+    content: "\e905";
+}
+.icon-Calendar:before {
+    content: "\e906";
+}
+.icon-Camera:before {
+    content: "\e907";
+}
+.icon-Chart:before {
+    content: "\e908";
+}
+.icon-Chat:before {
+    content: "\e909";
+}
+.icon-Chevron:before {
+    content: "\e90a";
+}
+.icon-Close:before {
+    content: "\e90b";
+}
+.icon-Compress:before {
+    content: "\e90c";
+}
+.icon-Delete:before {
+    content: "\e90d";
+}
+.icon-Download:before {
+    content: "\e90e";
+}
+.icon-Edit:before {
+    content: "\e90f";
+}
+.icon-Email:before {
+    content: "\e910";
+}
+.icon-Error:before {
+    content: "\e911";
+}
+.icon-Expand:before {
+    content: "\e912";
+}
+.icon-Export:before {
+    content: "\e913";
+}
+.icon-Favorite:before {
+    content: "\e914";
+}
+.icon-File:before {
+    content: "\e915";
+}
+.icon-Folder:before {
+    content: "\e916";
+}
+.icon-Group:before {
+    content: "\e917";
+}
+.icon-Heart:before {
+    content: "\e918";
+}
+.icon-Help:before {
+    content: "\e919";
+}
+.icon-Home:before {
+    content: "\e91a";
+}
+.icon-Information:before {
+    content: "\e91b";
+}
+.icon-Ledger:before {
+    content: "\e91c";
+}
+.icon-Link_web:before {
+    content: "\e91d";
+}
+.icon-Locations:before {
+    content: "\e926";
+}
+.icon-Max:before {
+    content: "\e927";
+}
+.icon-Menu:before {
+    content: "\e928";
+}
+.icon-Menu_drop:before {
+    content: "\e929";
+}
+.icon-Menu_list:before {
+    content: "\e92a";
+}
+.icon-Min:before {
+    content: "\e92b";
+}
+.icon-Notification:before {
+    content: "\e92c";
+}
+.icon-Offers:before {
+    content: "\e937";
+}
+.icon-Person:before {
+    content: "\e938";
+}
+.icon-Posak:before {
+    content: "\e939";
+}
+.icon-Print:before {
+    content: "\e93a";
+}
+.icon-Recurring:before {
+    content: "\e93b";
+}
+.icon-Refresh:before {
+    content: "\e93c";
+}
+.icon-Reports:before {
+    content: "\e93d";
+}
+.icon-Search:before {
+    content: "\e93e";
+}
+.icon-Security:before {
+    content: "\e93f";
+}
+.icon-Settings:before {
+    content: "\e940";
+}
+.icon-Table_sort:before {
+    content: "\e941";
+}
+.icon-Target:before {
+    content: "\e942";
+}
+.icon-Time:before {
+    content: "\e943";
+}
+.icon-Transfer:before {
+    content: "\e944";
+}
+.icon-Trash:before {
+    content: "\e945";
+}
+.icon-Video:before {
+    content: "\e946";
+}
+
+/*** Sample colors ***/
+.green_c {color:#8dc63f;}
+.orange {color:#f7b115;}
+.red {color:#990000;}
+.blue {color:#005F83;}
+.violet {color:#af0867;}
+.white {color:#ffffff;}
+
+.xxlrg-ic {font-size: 120px;}
+.xlrg-ic {font-size: 32px;}
+.lrg-ic{font-size: 24px;}
+.med-ic {font-size: 20px;}
+.sm-ic {font-size: 18px;}
+.xsm-ic {font-size: 12px;}
+
+/*******Loading Indicator *******/
+
+.loading  {
+  border-radius: 100px;
+  padding: 20px;
+  position: relative;
+  color: #fff;
+}
+.loading span {
+  height: 10px;
+  width: 10px;
+  float: left;
+  margin: 0 3px;
+  background-color: #777777;
+  display: block;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+.loading span:nth-of-type(1) {
+  -webkit-animation: 3s blink infinite 0.3333s;
+          animation: 3s blink infinite 0.3333s;
+}
+.loading span:nth-of-type(2) {
+  -webkit-animation: 3s blink infinite 0.6666s;
+          animation: 3s blink infinite 0.6666s;
+}
+.loading span:nth-of-type(3) {
+  -webkit-animation: 3s blink infinite 0.9999s;
+          animation: 3s blink infinite 0.9999s;
+}
+.loading span:nth-of-type(4) {
+  -webkit-animation: 3s blink infinite 1.3332s;
+          animation: 3s blink infinite 1.3332s;
+}
+.loading span:nth-of-type(5) {
+  -webkit-animation: 3s blink infinite 1.6665s;
+          animation: 3s blink infinite 1.6665s;
+}
+
+
+@-webkit-keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 1;
+  }
+}
+ 
